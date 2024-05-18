@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prottoy Roy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h2>To-Do List<img src="images/icon.png"></h2>
+
+            <div class="row">
+                <input type="text" name="" id="input-box" placeholder="Add your Task" style="font-size: 22px;">
+
+                <button class="round-button" onclick="addTask()"><span class="plus-icon">+</span></button>
+                <button class="round-button clear-button" onclick="clearAllTasks()">Clear All</button>
+
+            </div>
+
+            <ul id="list-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <!-- <li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li> -->
+            </ul>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
